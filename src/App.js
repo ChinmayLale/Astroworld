@@ -1,24 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
-
+import About from './Components/About';
+import Home from './Components/Home';
+import MyNavBar from './Components/MyNavBar';
+// import NavBar from './Components/NavBar';
+import { useState } from 'react';
+import { BrowserRouter, Route ,Routes } from "react-router-dom";
 function App() {
+  const [Mode, setMode] = useState('light');
+
+  const changeMode = () => {
+    if (Mode === 'light') {
+      setMode('dark');
+      document.body.style.backgroundColor = '#212529';
+      document.body.style.color = 'white';
+    }
+    else {
+      setMode('light');
+      document.body.style.backgroundColor = '#FFF7F1';
+      document.body.style.color = 'black';
+    }
+  }
+
+
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* <NavBar mode={Mode} changeMode={changeMode}/> */}
+    <MyNavBar mode={Mode} changeMode={changeMode}/>
+    
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home mode={Mode} changeMode={changeMode}/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/projects" element={<h1>Project</h1>}/>
+        <Route path="/contactme" element={<h1>Todo</h1>}/>
+      </Routes> 
+    </BrowserRouter> 
+    </>
   );
 }
 

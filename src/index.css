@@ -1,13 +1,394 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html ,body{
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* ----------------------------------My Nav Bar------------------------------------------ */
+.mynav{
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 8vh;
+  justify-content: space-between;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  border-bottom: 2px solid #dadada;
+}
+
+.mynav .navlogo{
+  display: flex;
+  align-items: center;
+  font-size: 1.2vw;
+}
+.mynav .navlogo h3{
+  font-size: 1.5vw;
+}
+.mynav .navlogo .navItems{
+  display: flex;
+  align-items: center;
+  padding: 0 2vw;
+  gap: 1.2vw;
+}
+.mynav .navlogo .navItems h4{
+  font-size: 1vw;
+}
+
+.mynav .socialIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 25%; /* Adjust as needed */
+  height: 100%;
+  margin-right: 2vw;
+}
+
+.social {
+  transform: scale(1em);
+  width: 2vw; /* Adjust as needed */
+  height: 2vw; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgb(194, 194, 194);
+}
+.mynav .mobilemenue{
+  display: none;
+}
+.twitter:hover {
+  background: linear-gradient(45deg, #66757f, #00acee, #36daff, #dbedff);
+}
+
+.facebook:hover {
+  background: linear-gradient(45deg, #134ac0, #316ff6, #78a3ff);
+}
+
+.google-plus:hover {
+  background: linear-gradient(45deg, #872419, #db4a39, #ff7061);
+}
+
+.instagram:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.social svg {
+  fill: white;
+  height: 1vmax;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+
+/* .navbarmine {
+  position: relative;
+  
+} */
+
+/* ---------------------------------------------Home Section----------------------------------------------------------------- */
+.home {
+  position: relative;
+  width: 100vw;
+  height: 92vh;
+  display: flex;
+  flex-wrap: wrap;
+ /* Adjust the value as needed */
+  /* background-color: #00fffb; */
+}
+.home .left{
+  width: 50%;
+  height: 100%;
+  /* background-color: black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .homeimg{
+  width: 60%;
+  height: 70%;
+}
+
+.home .right{
+  display: flex;
+  flex-direction: column;
+  gap:3vmax;
+  justify-content: center;
+  align-items:flex-start;
+  width: 50%;
+  height: 100%;
+  /* background-color: red; */
+}
+
+.home .right h2{
+  font-family: "Anta", sans-serif;
+  font-size: 3vw;
+  text-align: left;
+  width: 100%;
+}
+.home .right h2 span{
+  color: #e23521;
+}
+.home .right h4{
+  font-family: "Anta", sans-serif;
+  font-size: 1.5vw;
+  text-align: left;
+  width: 80%;
+  line-height: 2vmax;
+}
+.home .right .homebtns{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 10%;
+}
+.home .right .homebtns .hombtn {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  width: 10em;
+  height: 3em;
+}
+
+.home .right .homebtns .hombtn:hover {
+  background: rgb(61, 106, 255);
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.home .right .homebtns .hombtn:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+.home .right .homebtns .hombtn::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.home .right .homebtns .hombtn:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+.about{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 92vh;
+  background-color: brown;
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.about .about-left{
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 80%;
+  background-color:#66757f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------Mobile Css---------------------------------------------------------------- */
+
+@media (max-width:700px) {
+  /* -------------------------------------Nav------------------------------- */
+  .mynav .navlogo{
+    display: flex;
+    align-items: center;
+    font-size: 1.2max;
+  }
+  .mynav .navlogo .navimg{
+    transform: scale(1.8);
+  }
+  .mynav .navlogo h3{
+    font-size: 3vmax;
+  }
+  .mynav .navlogo .navItems{
+    display: flex;
+    align-items: auto;
+    padding: 0 2vw;
+    gap: 1.2vw;
+  }
+  .mynav .navlogo .navItems h4{
+    display: none;
+    font-size: 1.5vmax;
+  }
+  .mynav .socialIcons {
+    display: none;
+  }
+  .mynav .mobilemenue{
+    display: block;
+    font-size: 5vmax;
+    margin-right: 1.5vmax;
+  }
+  .mynav img{
+    transform: scale(0.5);
+  }
+
+  .mynav .mobilemenu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top:7vh;
+    width: 100vw;
+    height: 100rem;
+    backdrop-filter: blur(6px);
+    background-color: #fff7f15f;
+    z-index: 99;
+  }
+  .mynav .mobilemenu h4{
+    font-size: 2.5vmax;
+    margin: 5vh 0vh;
+    text-align: center;
+    /* background-color: #fff7f15f; */
+  }
+  .mynav .mobilemenu label{
+    align-items: center;
+    padding-left: 45%;
+    transform: scale(3.5);
+    /* background-color: #fff7f15f; */
+    width: 100%;
+    margin-bottom: 5vh;
+  }
+
+  .mynav .mobilemenu .mb-social-icon{
+    /* background-color: #fff7f15f; */
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  /* ---------------------------------------------------------------------------------*/
+
+  /* --------------------------------------Home section's --------------------------------*/
+  .home {
+    position: relative;
+    width: 100vw;
+    height: 92vh;
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .home .homeimg{
+    width: 100%;
+    height: 100%;
+  }
+  .home .right{
+    display: flex;
+    flex-direction: column;
+    gap:3vmax;
+    justify-content: center;
+    align-items:flex-start;
+    width: 75%;
+    height: 100%;
+    /* background-color: red; */
+  }
+  
+  .home .right h2{
+    font-family: "Anta", sans-serif;
+    font-size: 4vmax;
+    text-align: left;
+    width: 100%;
+  }
+  .home .right h2 span{
+    color: #e23521;
+  }
+  .home .right h4{
+    font-family: "Anta", sans-serif;
+    font-size: 2.2vmax;
+    text-align: justify;
+    width: 100%;
+    line-height: 2.5vmax;
+  }
+  .home .right .homebtns{
+    transform: scale(1);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 10%;
+    margin-bottom: 3vmax;
+  }
+  /* -------------------------------------------------------------------------------------------------------------------------------- */
+
 }
