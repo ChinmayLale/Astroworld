@@ -2,6 +2,7 @@ html ,body{
   height: 100vh;
   width: 100vw;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 
@@ -10,9 +11,10 @@ html ,body{
   position: relative;
   display: flex;
   width: 100vw;
+  z-index: 10;
   height: 8vh;
   justify-content: space-between;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Anta", sans-serif ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   align-items: center;
   border-bottom: 2px solid #dadada;
 }
@@ -230,21 +232,238 @@ html ,body{
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 92vh;
-  background-color: brown;
+  height: max-content;
+  gap: 2vh;
+  /* background-color: brown; */
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* overflow-x:hidden; */
+  /* overflow-y: scroll;  */
+}
+
+.about .fd-about{
+  position: relative;
+  display: flex;
+  /* overflow-x:hidden; */
+  flex-direction: row;
+  width: 90%;
+  align-items: center;
+  /* order: 1; */
+  justify-content: space-around;
+  height: 80%;
+  /* background-color: pink; */
+  margin-bottom: 2vh;
+  margin-top: 5px;
+}
+.about .fd-about .about-left{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* background-color: skyblue; */
+  margin-top: 9vh;
+  width: 50%;
+}
+
+.about .fd-about .about-left h1{
+  font-family: "Anta", sans-serif;
+  font-size: 5.8vmax;
+  margin-top: 4vh;
+  text-align: left;
+}
+.about .fd-about .about-left h2{
+  font-family: "Anta", sans-serif;
+  font-size: 4vmax;
+  text-align: left;
+}
+.about .fd-about .about-left h3{
+  font-family: "Anta", sans-serif;
+  margin-top: 5vmax;
+  font-size: 3vmax;
+  text-align: left;
+}
+.about .fd-about .about-left h3 span{
+  font-family: "Anta", sans-serif;
+  margin-top: 5vmax;
+  font-size: 3vmax;
+  text-align: left;
+}
+.about .fd-about .about-left p{
+  font-family: "Anta", sans-serif;
+  font-size: 1.1vmax;
+}
+.about .fd-about .myimg{
+  overflow-x:hidden;
+  width: 30%;
+  height: 80%;
+  background-size: contain;
+  border-radius: 50%;
+}
+
+.about .sd-about{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: crimson; */
+  width: 90%;
+  height: max-content;
+}
+.about .sd-about h1{
+  font-family: "Anta", sans-serif;
+  font-size: 3vmax;
+  margin-top: 4vh;
+  /* text-align: left; */
+}
+
+.about .td-about{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: yellow; */
+  width: 90%;
+  height: 50vmax;
+  margin-bottom: 3vh;
+}
+
+.about .td-about h1{
+  font-family: "Anta", sans-serif;
+  font-size: 4vmax;
+  margin-top: 4vh;
+  text-align: left;
+}
+.about .td-about .skills{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  /* background-color: crimson; */
+  width: 90%;
+  height: 100%;
+  gap: 2vw;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 5vh;
+}
+
+
+/* =======================================Discord Black ----------------------------------------------------------*/
+.card {
+  position: relative;
+  width: 12vmax;
+  font-family: "Anta", sans-serif;
+  height: 17vmax;
+  background-color: #230f4d24;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff00;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card svg {
+  width: 100%;
+  height: 80%;
+  align-items: center;
+  fill: black;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #230f4d24;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 2vmax;
+  color: #333;
+  font-weight: 700;
+}
+
+.card:hover svg {
+  scale: 0;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 1.5vmax;
+  color: #777;
+  line-height: 1.4;
+}
+
+/* ======================================================================================================= */
+
+
+.about .certi-about{
+  position: relative;
+  width: 90%;
+  height: max-content;
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.about .certi-about h1{
+  font-family: "Anta", sans-serif;
+  font-size: 4vmax;
+  margin-top: 4vh;
+}
+.about .certi-about img{
+  border: 2px solid crimson;
+  border-radius: 10%;
+  background-size: auto;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+.projects{
+  position: relative;
+  background-color: skyblue;
+  width:100vw;
+  height: max-content;
+  overflow-x: hidden !important;
+  display: flex;
+  flex-direction: column;
   /* justify-content: center; */
   align-items: center;
   flex-wrap: nowrap;
 }
-.about .about-left{
-  position: relative;
-  display: flex;
-  height: 100%;
+.projects .p1{
+  height: 50vh;
   width: 80%;
-  background-color:#66757f;
+  background-color: crimson;
 }
-
-
+.projects .p2{
+  height: 50vh;
+}
+.projects .p3{
+  height: 50vh;
+}
 
 
 
@@ -390,5 +609,33 @@ html ,body{
     margin-bottom: 3vmax;
   }
   /* -------------------------------------------------------------------------------------------------------------------------------- */
+  /* -------------------------------------------About--------------------------------------------------------------- */
+  .about .fd-about{
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80%;
+    /* background-color: pink; */
+  }
+  .about .fd-about .about-left{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* background-color: skyblue; */
+    width: 100%;
+  }
+  .about .fd-about .myimg{
+    width: 60%;
+    height: 60%;
+    background-size: cover;
+    border: 2px solid crimson;
+    border-radius: 50%;
+  }
 
+  .about .fd-about .about-left p{
+    font-size: 1.5vmax;
+  }
 }

@@ -1,6 +1,11 @@
 import React from 'react'
 import developer from '../Components/assets/Images/Designersvg.png';
+import About from '../Components/About';
+
+
+
 function Home(props) {
+ 
   return (
     <div style={{'color':props.mode==='light'?'black':'white'}} className='mainhome'>
       <div className="home">
