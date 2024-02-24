@@ -432,18 +432,35 @@ html ,body{
   font-family: "Anta", sans-serif;
   font-size: 4vmax;
   margin-top: 4vh;
+  margin-bottom: 2vh;
 }
 .about .certi-about img{
-  border: 2px solid crimson;
-  border-radius: 10%;
+  border: 2px solid white;
+  border-radius: 5%;
   background-size: auto;
+  background-color: blue;
+}
+
+.about .certi-about .certi-img{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+.about .certi-about .certi-img .arrow{
+  /* background-color: blue; */
+  height: 50px;
+  width: 50px;
 }
 /* ------------------------------------------------------------------------------------------------------------------------------------ */
 
 
 .projects{
   position: relative;
-  background-color: skyblue;
+  /* background-color: skyblue; */
   width:100vw;
   height: max-content;
   overflow-x: hidden !important;
@@ -454,15 +471,44 @@ html ,body{
   flex-wrap: nowrap;
 }
 .projects .p1{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
   height: 50vh;
-  width: 80%;
-  background-color: crimson;
+  width: 90%;
+  /* background-color: crimson; */
 }
+.projects .p1 .p1-inner{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+    background-color: crimson;
+    align-items: center;
+  width: 100%;
+  height: 100%;
+
+}
+.projects .p1 .p1-inner .ytvdo{
+  border-radius: 4%;
+  margin-left: 2vw;
+  width: 30%;
+  height: 80%;
+}
+
+
+
+
+
+
 .projects .p2{
   height: 50vh;
+  width: 90%;
+  background-color: coral;
 }
 .projects .p3{
   height: 50vh;
+  width: 90%;
+  background-color: #777;
 }
 
 
@@ -633,9 +679,52 @@ html ,body{
     background-size: cover;
     border: 2px solid crimson;
     border-radius: 50%;
+    margin-top: 6vh;
   }
 
   .about .fd-about .about-left p{
-    font-size: 1.5vmax;
+    font-size: 1.8vmax;
+  }
+
+  .about .sd-about h1{
+    font-family: "Anta", sans-serif;
+    font-size: 5vmax;
+    /* text-align: left; */
+  }
+
+  .about .td-about h1{
+    font-family: "Anta", sans-serif;
+    font-size: 5vmax;
+    /* text-align: left; */
+  }
+
+  .about .certi-about h1{
+    font-family: "Anta", sans-serif;
+    font-size: 5vmax;
+    margin-top: 10vmax;
+    /* text-align: left; */
+  }
+  .about .certi-about img{
+    border: 2px solid white;
+    border-radius: 5%;
+    background-size: auto;
+    background-color: blue;
+    width: 80%;
+  }
+  
+  .about .certi-about .certi-img{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /* width: 50%; */
+    flex-wrap: nowrap;
+    margin-bottom: 5vh;
+  }
+  .about .certi-about .certi-img .arrow{
+    /* background-color: blue; */
+    height: 80px;
+    width: 80px;
   }
 }

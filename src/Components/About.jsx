@@ -6,12 +6,58 @@ import './Style/edutime.css';
 import mypic from '../Components/assets/Images/mypic_test_2.jpg';
 import img1 from '../Components/assets/Certifications/img1.png';
 import img2 from '../Components/assets/Certifications/img2.png';
+import img3 from '../Components/assets/Certifications/img3.png';
+import img4 from '../Components/assets/Certifications/img4.png';
+import img5 from '../Components/assets/Certifications/img5.png';
+import img6 from '../Components/assets/Certifications/img6.png';
+import img7 from '../Components/assets/Certifications/img7.png';
+import img8 from '../Components/assets/Certifications/img8.png';
+import img9 from '../Components/assets/Certifications/img9.png';
+import img10 from '../Components/assets/Certifications/img10.png';
+import img11 from '../Components/assets/Certifications/img11.png';
+
+
+
 function About(props) {
   const words = ['Full Stack Developer', 'Java Developer', 'Patent Holder', 'IOT Developer'];
-  
-  let changeCerti = () => {
-    const certi = document.getElementById('certi-img');
-    certi.src = img2;
+  let currentIndex = 0;
+  const images = [
+    {src : img1},
+    {src : img2},
+    {src : img3},
+    {src : img4},
+    {src : img5},
+    {src : img6},
+    {src : img7},
+    {src : img8},
+    {src : img9},
+    {src : img10},
+    {src : img11},
+  ];
+
+  const changeImageplus = () => {
+    const imageElement = document.getElementById("certiimg");
+    // const imageElement = document.getElementById("certiimg");
+
+    currentIndex = (currentIndex + 1);
+    if(currentIndex > 10){
+      currentIndex = 0;
+    }
+    const currentImage = images[currentIndex];
+    imageElement.src = currentImage.src;
+    imageElement.alt = currentImage.alt;
+  }
+  const changeImageminus = () => {
+    const imageElement = document.getElementById("certiimg");
+    // const imageElement = document.getElementById("certiimg");
+
+    currentIndex = (currentIndex - 1);
+    if(currentIndex < 1){
+      currentIndex = 10;
+    }
+    const currentImage = images[currentIndex];
+    imageElement.src = currentImage.src;
+    imageElement.alt = currentImage.alt;
   }
 
   return (
@@ -19,8 +65,8 @@ function About(props) {
       <div className="fd-about">
         <div className="about-left">
           <h1>Hi there ! &#128075;</h1>
-          <h2>Im Chinmay Lale</h2>
-          <h3>Im a  <span style={{ color: props.mode === 'light' ? 'rgba(233,33,99,1)' : 'rgba(233,33,99,1)' }}><Typewriter
+          <h2>I'm Chinmay Lale</h2>
+          <h3>A  <span style={{ color: props.mode === 'light' ? 'rgba(233,33,99,1)' : 'rgba(233,33,99,1)' }}><Typewriter
             words={words}
             loop={0}
             cursor
@@ -29,7 +75,7 @@ function About(props) {
             deleteSpeed={50}
             delaySpeed={1000}
           /></span></h3>
-          <p>
+          <p style={{textJustify:'justify'}}>
             Hi, I'm Chinmay Lale,currently based in Wagholi, Pune. With a passion for technology and innovation, I've ventured into diverse projects, including Trata, a patented crop monitoring system boasting a 98% accuracy in feature extraction and predictive modeling. I also spearheaded the development of WallE Rover, a self-navigating rover adept at traversing challenging terrains using sensor fusion and IoT technologies. My expertise extends to game development, where I seamlessly integrated gaming functionalities in The Warrior, leveraging Unreal Engine's capabilities. Alongside my technical prowess, I hold certifications in Azure Fundamentals, Cyber Security, and Data Visualization with Python, among others. With a Bachelor's in Technology from N. K. Orchid College of Engineering & Technology, Solapur, I'm constantly driven to push boundaries and explore new frontiers in technology
           </p>
         </div>
@@ -161,9 +207,12 @@ function About(props) {
 
       </div>
       <div className="certi-about">
-        <h1 onClick={changeCerti}>Certifications</h1>
-        <img src={img1} alt="" id='certi-img'/>
-
+        <h1>Certifications</h1>
+        <div className="certi-img">
+        <svg xmlns="http://www.w3.org/2000/svg" onClick={changeImageminus} viewBox="0 0 24 24" className='arrow' fill="currentColor"><path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"></path></svg>
+        <img id="certiimg" src={img1} alt="" style={{borderColor : props.mode == 'light' ? 'black' : 'white'}} />
+        <svg xmlns="http://www.w3.org/2000/svg" className='arrow' onClick={changeImageplus} viewBox="0 0 24 24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
+        </div>
       </div>
     </div>
   )
