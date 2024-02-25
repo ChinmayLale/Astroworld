@@ -8,7 +8,8 @@ html ,body{
 
 /* ----------------------------------My Nav Bar------------------------------------------ */
 .mynav{
-  position: relative;
+  position: absolute;
+  top: 0;
   display: flex;
   width: 100vw;
   z-index: 10;
@@ -16,6 +17,7 @@ html ,body{
   justify-content: space-between;
   font-family: "Anta", sans-serif ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   align-items: center;
+  backdrop-filter: blur(10px);
   border-bottom: 2px solid #dadada;
 }
 
@@ -97,7 +99,7 @@ html ,body{
 .home {
   position: relative;
   width: 100vw;
-  height: 92vh;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
  /* Adjust the value as needed */
@@ -235,6 +237,7 @@ html ,body{
   height: max-content;
   gap: 2vh;
   /* background-color: brown; */
+  margin-top: 8vh;
   justify-content: space-between;
   align-items: center;
   /* flex-wrap: wrap; */
@@ -426,6 +429,7 @@ html ,body{
   flex-direction: column;
   align-items: center;
   margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .about .certi-about h1{
@@ -439,6 +443,8 @@ html ,body{
   border-radius: 5%;
   background-size: auto;
   background-color: blue;
+  width: 50vmax;
+  height: 35vmax;
 }
 
 .about .certi-about .certi-img{
@@ -455,12 +461,120 @@ html ,body{
   height: 50px;
   width: 50px;
 }
+/* ==================================================================================== */
+
+.about .edu{
+  position: relative;
+  width: 90%;
+  height: max-content;
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.about .edu h1{
+  font-size: 4vmax;
+  /* margin-top: 4vh; */
+  margin-bottom: 2vh;
+}
+
+/* Edu Timeline================================== */
+.about .edu .container{
+  font-family: "Anta", sans-serif;
+  font-size: 1.5vmax;
+  padding: 0 25px;
+  margin: 0 60px;
+  ul{
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -20px;
+      height: 100%;
+      border: 1px dashed #aaa;
+    }
+  }
+}
+ .box{
+  margin: 50px 0;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.2);
+  width: 40vw;
+  position: relative;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 3px rgba(100, 100, 100, 0.3);
+  >span{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    height: 100%;
+    border: 1px solid #ccc;
+    &:before,
+    &:after{
+      content: "";
+      position: absolute;
+      left: -7px;
+      width: 10px;
+      height: 10px;
+      border: 2px solid #ccc;
+      background: #01579B;
+      border-radius: 100%;
+    }
+    &:before{
+      top: -12px;
+    }
+    &:after{
+      top: 100%;
+    }
+  }
+  .title{
+    font-size: 2vw;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+  .sub-title{
+    font-size: 1.5vw;
+    color: #5c5b5b;
+  }
+  .info{
+    margin: 15px 0;
+    font-size: 1vw;
+  }
+  .time{
+    span{
+      position: absolute;
+      font-size: 1rem;
+
+      &:first-child{
+        top: -25px;
+        left: -100px;
+      }
+      &:last-child{
+        top: 100%;
+        left: -100px;
+      }
+    }
+  }
+}
+
+
+
 /* ------------------------------------------------------------------------------------------------------------------------------------ */
 
 
 .projects{
   position: relative;
-  /* background-color: skyblue; */
+  font-family: "Anta", sans-serif;
+  background-color: skyblue;
   width:100vw;
   height: max-content;
   overflow-x: hidden !important;
@@ -474,31 +588,55 @@ html ,body{
   display: flex;
   flex-direction: column;
   justify-items: center;
+  margin-top: 8vh;
+  align-items: center;
+  gap: 5vh;
   height: 50vh;
   width: 90%;
-  /* background-color: crimson; */
+  background-color: crimson;
+}
+
+.projects .p1 h1{
+  font-size: 3vmax;
+  /* margin-top: 4vh; */
+  margin-bottom: 2vh;
 }
 .projects .p1 .p1-inner{
   position: relative;
   display: flex;
   flex-direction: row;
-    background-color: crimson;
-    align-items: center;
   width: 100%;
   height: 100%;
+  /* margin-top: 10vh; */
+  background-color: pink;
+  justify-content: space-between;
+  align-items: center;
 
 }
-.projects .p1 .p1-inner .ytvdo{
-  border-radius: 4%;
+.projects .p1 .p1-inner iframe{
+  /* height: 80%; */
   margin-left: 2vw;
-  width: 30%;
-  height: 80%;
+  /* border: 1.5px solid #dadada; */
+  /* justify-content: center; */
+  border-radius: 2%;
+}
+.projects .p1 .p1-inner .desc{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  background-color: red;
+  justify-content: left;
+  align-items: left;
+  margin-left: 5vw;
+  gap: 1vh;
 }
 
-
-
-
-
+.projects .p1 .p1-inner .desc h3{
+  font-size: 2vmax;
+  margin-bottom: 2vh;
+}
 
 .projects .p2{
   height: 50vh;
@@ -532,6 +670,9 @@ html ,body{
 
 @media (max-width:700px) {
   /* -------------------------------------Nav------------------------------- */
+  .mynav{
+    position: relative;
+  }
   .mynav .navlogo{
     display: flex;
     align-items: center;
@@ -710,6 +851,7 @@ html ,body{
     background-size: auto;
     background-color: blue;
     width: 80%;
+    height: 50%;
   }
   
   .about .certi-about .certi-img{
@@ -727,4 +869,114 @@ html ,body{
     height: 80px;
     width: 80px;
   }
+
+
+  
+.about .edu{
+  position: relative;
+  width: 90%;
+  height: max-content;
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.about .edu h1{
+  font-size: 4vmax;
+  /* margin-top: 4vh; */
+  margin-bottom: 2vh;
+}
+
+/* Edu Timeline================================== */
+.about .edu .container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: "Anta", sans-serif;
+  width: 100%;
+  font-size: 2vmax;
+  padding: 0 25px;
+  margin: 0 60px;
+  ul{
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -10px;
+      height: 100%;
+      border: 1px dashed #aaa;
+    }
+  }
+}
+ .box{
+  margin: 50px 0;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.2);
+  width: 60vw;
+  
+  position: relative;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 3px rgba(100, 100, 100, 0.3);
+  >span{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    height: 100%;
+    border: 1px solid #ccc;
+    &:before,
+    &:after{
+      content: "";
+      position: absolute;
+      left: -7px;
+      width: 10px;
+      height: 10px;
+      border: 2px solid #ccc;
+      background: #01579B;
+      border-radius: 100%;
+    }
+    &:before{
+      top: -12px;
+    }
+    &:after{
+      top: 100%;
+    }
+  }
+  .title{
+    font-size: 2.5vmax;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+  .sub-title{
+    font-size: 2vmax;
+    color: #5c5b5b;
+  }
+  .info{
+    margin: 15px 0;
+    font-size: 1.5vmax;
+  }
+  .time{
+    span{
+      position: absolute;
+      font-size: 1rem;
+
+      &:first-child{
+        top: -25px;
+        left: -70px;
+      }
+      &:last-child{
+        top: 100%;
+        left: -70px;
+      }
+    }
+  }
+}
 }

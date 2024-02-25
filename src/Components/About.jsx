@@ -22,17 +22,17 @@ function About(props) {
   const words = ['Full Stack Developer', 'Java Developer', 'Patent Holder', 'IOT Developer'];
   let currentIndex = 0;
   const images = [
-    {src : img1},
-    {src : img2},
-    {src : img3},
-    {src : img4},
-    {src : img5},
-    {src : img6},
-    {src : img7},
-    {src : img8},
-    {src : img9},
-    {src : img10},
-    {src : img11},
+    { src: img1 },
+    { src: img2 },
+    { src: img3 },
+    { src: img4 },
+    { src: img5 },
+    { src: img6 },
+    { src: img7 },
+    { src: img8 },
+    { src: img9 },
+    { src: img10 },
+    { src: img11 },
   ];
 
   const changeImageplus = () => {
@@ -40,7 +40,7 @@ function About(props) {
     // const imageElement = document.getElementById("certiimg");
 
     currentIndex = (currentIndex + 1);
-    if(currentIndex > 10){
+    if (currentIndex > 10) {
       currentIndex = 0;
     }
     const currentImage = images[currentIndex];
@@ -52,7 +52,7 @@ function About(props) {
     // const imageElement = document.getElementById("certiimg");
 
     currentIndex = (currentIndex - 1);
-    if(currentIndex < 1){
+    if (currentIndex < 1) {
       currentIndex = 10;
     }
     const currentImage = images[currentIndex];
@@ -75,7 +75,7 @@ function About(props) {
             deleteSpeed={50}
             delaySpeed={1000}
           /></span></h3>
-          <p style={{textJustify:'justify'}}>
+          <p style={{ textJustify: 'justify' }}>
             Hi, I'm Chinmay Lale,currently based in Wagholi, Pune. With a passion for technology and innovation, I've ventured into diverse projects, including Trata, a patented crop monitoring system boasting a 98% accuracy in feature extraction and predictive modeling. I also spearheaded the development of WallE Rover, a self-navigating rover adept at traversing challenging terrains using sensor fusion and IoT technologies. My expertise extends to game development, where I seamlessly integrated gaming functionalities in The Warrior, leveraging Unreal Engine's capabilities. Alongside my technical prowess, I hold certifications in Azure Fundamentals, Cyber Security, and Data Visualization with Python, among others. With a Bachelor's in Technology from N. K. Orchid College of Engineering & Technology, Solapur, I'm constantly driven to push boundaries and explore new frontiers in technology
           </p>
         </div>
@@ -209,9 +209,47 @@ function About(props) {
       <div className="certi-about">
         <h1>Certifications</h1>
         <div className="certi-img">
-        <svg xmlns="http://www.w3.org/2000/svg" onClick={changeImageminus} viewBox="0 0 24 24" className='arrow' fill="currentColor"><path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"></path></svg>
-        <img id="certiimg" src={img1} alt="" style={{borderColor : props.mode == 'light' ? 'black' : 'white'}} />
-        <svg xmlns="http://www.w3.org/2000/svg" className='arrow' onClick={changeImageplus} viewBox="0 0 24 24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" onClick={changeImageminus} viewBox="0 0 24 24" className='arrow' fill="currentColor"><path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"></path></svg>
+          <img id="certiimg" src={img1} alt="" style={{ borderColor: props.mode == 'light' ? 'black' : 'white' }} />
+          <svg xmlns="http://www.w3.org/2000/svg" className='arrow' onClick={changeImageplus} viewBox="0 0 24 24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
+        </div>
+      </div>
+
+      <div className="edu" style={{ color: props.mode === 'light' ? 'black' : 'white' }}>
+        <h1>Education</h1>
+        <div className="container">
+          <ul>
+            <li className="box"style={{ color: props.mode === 'light' ? 'black' : 'white' }}>
+              <span></span>
+              <div className="title">Bachelor of Technology (B. Tech)</div>
+              <div className="sub-title">Computer Science Engineering : 7.5 / 10 cgpa</div>
+              <div className="info">N. K. Orchid College of Engineering & Technology</div>
+              <div className="time" style={{ color: props.mode === 'light' ? 'black' : 'white' }}>
+                <span>2024</span>
+                <span>2020</span>
+              </div>
+            </li>
+            <li className="box">
+              <span></span>
+              <div className="title">Higher Secondary School </div>
+              <div className="sub-title">HSC in Science </div>
+              <div className="info">Sangameshwar College</div>
+              <div className="time">
+                <span>2020</span>
+                <span>2018</span>
+              </div>
+            </li>
+            <li className="box">
+              <span></span>
+              <div className="title">Secondary School </div>
+              <div className="sub-title">SSC </div>
+              <div className="info">Jnana Prabodhini</div>
+              <div className="time">
+                <span>2018</span>
+                <span>2017</span>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
