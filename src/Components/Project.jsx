@@ -24,12 +24,12 @@ function Project(props) {
         </div>
       </div>
       <div className="p2">
-        <h2>Background</h2>
+        <h2 style={{textAlign:'center' }}>Background</h2>
         <h3>
           Traditionally farmers have used their perceptual sensorial systems to diagnose and monitor their crops health and needs. Now conventional smartphones are equipped with several sensors that could be useful to support real-time usual and advanced farming activities. The proposed system will fetch inputs from farmers and sensors like soil moisture, temperature, humidity and then will predict the best suitable crop for their soil type.
         </h3>
-        <h2 className='tech'>Tech Stack Used </h2>
-        <div className="techstack">
+        <h2 className='tech' style={{textAlign:'center',borderBottom :'2px solid'}}>Tech Stack Used </h2>
+        <div className="techstack" style={{marginTop:'2%'}}>
           <div className="card">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px"><path fill="#0277bd" d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22 h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104 c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672 C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498 c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z" /><path fill="#ffc107" d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343 h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104 c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672 C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498 c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z" /></svg>
             <div className="card__content">
@@ -58,7 +58,7 @@ function Project(props) {
           </div>
 
           <div className="card">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" style={{ filter: props.mode==='light' ? 'invert(0%)' : 'invert(100%)'}}>
               <g fill="none" stroke="#000" stroke-width="2">
                 <circle cx="24" cy="24" r="20" />
                 <path d="M16 24v-4h4M32 24v-4h-4M12 16l4 4M36 16l-4 4M12 32l4-4M36 32l-4-4" />
@@ -73,7 +73,7 @@ function Project(props) {
           </div>
 
           <div className="card">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet" fill={props.mode === 'light' ? 'black' : 'white'}>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet" style={{ filter: props.mode==='light' ? 'invert(0%)' : 'invert(100%)'}}>
 
               <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
                 <path d="M1805 3501 c-71 -18 -131 -66 -169 -136 -21 -40 -21 -41 -21 -805 0 -764 0 -765 21 -805 28 -51 68 -91 119 -119 40 -21 41 -21 805 -21 l765 0 44 23 c51 28 85 62 115 117 21 40 21 42 21 805 0 763 0 765 -21 805 -30 55 -64 89 -115 117 l-44 23 -745 2 c-410 1 -758 -2 -775 -6z m510 -376 c20 -19 25 -34 25 -75 l0 -50 75 0 75 0 0 55 c0 65 22 95 70 95 48 0 70 -30 70 -95 l0 -55 75 0 75 0 0 49 c0 91 69 133 125 76 22 -21 25 -33 25 -90 0 -89 16 -105 105 -105 57 0 69 -3 90 -25 14 -13 25 -36 25 -50 0 -14 -11 -37 -25 -50 -19 -20 -34 -25 -75 -25 l-50 0 0 -75 0 -75 55 0 c65 0 95 -22 95 -70 0 -48 -30 -70 -95 -70 l-55 0 0 -75 0 -75 50 0 c41 0 56 -5 75 -25 32 -31 32 -69 0 -100 -21 -22 -33 -25 -90 -25 -89 0 -105 -16 -105 -105 0 -57 -3 -69 -25 -90 -31 -32 -69 -32 -100 0 -20 19 -25 34 -25 75 l0 50 -75 0 -75 0 0 -55 c0 -65 -22 -95 -70 -95 -48 0 -70 30 -70 95 l0 55 -75 0 -75 0 0 -50 c0 -41 -5 -56 -25 -75 -13 -14 -36 -25 -50 -25 -14 0 -37 11 -50 25 -22 21 -25 33 -25 90 0 89 -16 105 -105 105 -57 0 -69 3 -90 25 -57 56 -15 125 76 125 l49 0 0 75 0 75 -55 0 c-65 0 -95 22 -95 70 0 48 30 70 95 70 l55 0 0 75 0 75 -50 0 c-41 0 -56 5 -75 25 -32 31 -32 69 0 100 21 22 33 25 90 25 89 0 105 16 105 105 0 57 3 69 25 90 13 14 36 25 50 25 14 0 37 -11 50 -25z" />
@@ -88,7 +88,7 @@ function Project(props) {
         </div>
       </div>
       <div className="p3">
-        <h1>Some Project Pics </h1>
+        <h1 style={{textAlign:'center',borderBottom :'2px solid'}}>Some Project Pics </h1>
         <div className="project-img">
           <div className="projimgcol">
           <img src={teampic_1} alt="" id='img1p'/>
