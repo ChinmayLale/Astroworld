@@ -1,17 +1,21 @@
 import React from 'react'
+import {useNavigate} from 'react-router-dom';
 import teampic_1 from './assets/Images/Samana_Pune_1674459217.jpeg';
 import teampic_2 from './assets/Images/Team.jpg';
 import teampic_3 from './assets/Images/vijayBhatkar.jpg';
 function Project(props) {
+  const navigate = useNavigate();
+
+
   return (
     <div className="projects">
       <div className="p1">
         <h1>Trata - Ai Based Crop Monitoring & Predication System</h1>
         <div className="p1-inner">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/7YcE06znHCg?si=YrgB_G6jS0YBVMd7" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/7YcE06znHCg?si=YrgB_G6jS0YBVMd7" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           <div className="desc">
             <h3>Description </h3>
-            <h4>&bull; Engineered and executed a machine learning pipeline with <b>accuracy of 98%</b> for automated feature
+            <h4>&bull; Engineered and executed a machine learning pipeline with  <b>accuracy of 98%  </b>  for automated  feature
               extraction and predictive modeling within a crop monitoring system.
             </h4>
             <h4>
@@ -24,7 +28,7 @@ function Project(props) {
         </div>
       </div>
       <div className="p2">
-        <h2 style={{textAlign:'center' }}>Background</h2>
+        <h2 style={{textAlign:'center', borderBottom:'2px solid'}}>Background</h2>
         <h3>
           Traditionally farmers have used their perceptual sensorial systems to diagnose and monitor their crops health and needs. Now conventional smartphones are equipped with several sensors that could be useful to support real-time usual and advanced farming activities. The proposed system will fetch inputs from farmers and sensors like soil moisture, temperature, humidity and then will predict the best suitable crop for their soil type.
         </h3>
@@ -88,7 +92,7 @@ function Project(props) {
         </div>
       </div>
       <div className="p3">
-        <h1 style={{textAlign:'center',borderBottom :'2px solid'}}>Some Project Pics </h1>
+        <h1 style={{textAlign:'center',borderBottom :'2px solid' ,width:'100%'}}>Some Project Pics </h1>
         <div className="project-img">
           <div className="projimgcol">
           <img src={teampic_1} alt="" id='img1p'/>
@@ -105,6 +109,10 @@ function Project(props) {
         </div>
         <h2>My Role : Developed A IOT Kit & Android App</h2>
       </div>
+      <button className='btn btn-lg btn-primary my-5' style={{'color':props.mode==='light'?'black':'white' , alignItems:"self-end"}} onClick={()=>{navigate('/projects_2')}} >
+            Next 
+            
+      </button>
     </div>
   )
 }

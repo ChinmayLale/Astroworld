@@ -623,11 +623,11 @@ html ,body{
 .projects .p1 .p1-inner iframe{
   padding: 10px 10px;
   margin-left: 2vw;
-  border: 2px solid ;
+  /* border: 2px solid ; */
   border-radius: 2%;
 }
 .projects .p1 .p1-inner .desc{
-  border: 2px solid;
+  /* border: 2px solid; */
   border-radius: 1%;
   position: relative;
   display: flex;
@@ -638,10 +638,12 @@ html ,body{
   justify-content: left;
   align-items: left;
   margin-left: 5vw;
+  text-align: justify;
   gap: 1vh;
 }
 
 .projects .p1 .p1-inner .desc h3{
+  
   border-bottom: 2px solid;
   font-size: 2vmax;
   margin-bottom: 2vh;
@@ -650,7 +652,7 @@ html ,body{
 .projects .p2{
   padding: 10px 10px;
   margin-top: 4vh;
-  border: 2px solid;
+  /* border: 2px solid; */
   position: relative;
   height: 80vh;
   width: 90%;
@@ -673,6 +675,7 @@ html ,body{
   /* border-bottom: 2px solid; */
 }
 .projects .p2 .tech{
+  justify-content: center;
   margin-top: 5vh;
 }
 .projects .p2 .techstack{
@@ -689,7 +692,7 @@ html ,body{
 
 .projects .p3{
   position: relative;
-  border: 2px solid;
+  /* border: 2px solid; */
   margin-top: 5vh;
   display: flex;
   flex-direction: column;
@@ -770,6 +773,7 @@ html ,body{
     display: block;
     font-size: 5vmax;
     margin-right: 1.5vmax;
+    backdrop-filter: blur(10px);
   }
   .mynav img{
     transform: scale(0.5);
@@ -784,9 +788,9 @@ html ,body{
     top:7vh;
     width: 100vw;
     height: 100rem;
-    backdrop-filter: blur(6px);
-    background-color: #fff7f15f;
-    z-index: 99;
+    backdrop-filter: blur(10px);
+    background-color: #fff7f19b;
+    /* z-index: 99; */
   }
   .mynav .mobilemenu h4{
     font-size: 2.5vmax;
@@ -816,6 +820,7 @@ html ,body{
   /* --------------------------------------Home section's --------------------------------*/
   .home {
     position: relative;
+    margin-top: 2.5vmax;
     width: 100vw;
     height: 92vh;
     display: flex;
@@ -873,7 +878,7 @@ html ,body{
     width: 90%;
     align-items: center;
     justify-content: space-evenly;
-    height: 80%;
+    height: max-content;
     /* background-color: pink; */
   }
   .about .fd-about .about-left{
@@ -884,12 +889,12 @@ html ,body{
     width: 100%;
   }
   .about .fd-about .myimg{
-    width: 60%;
-    height: 60%;
+    width: 80%;
+    height: 80%;
     background-size: cover;
     border: 2px solid crimson;
     border-radius: 50%;
-    margin-top: 6vh;
+    margin-top: 0vh;
   }
 
   .about .fd-about .about-left p{
@@ -983,7 +988,7 @@ html ,body{
     }
   }
 }
- .box{
+.box{
   margin: 50px 0;
   padding: 10px 20px;
   background: rgba(0, 0, 0, 0.2);
@@ -1048,4 +1053,180 @@ html ,body{
     }
   }
 }
+/* ==============================================Edu Timeline COde Ended=========================================== */
+
+
+/* ================================Project Page started============================================================== */
+
+  
+
+.projects{
+  position: relative;
+  font-family: "Anta", sans-serif;
+  /* background-color: skyblue; */
+  width:100vw;
+  height: max-content;
+  overflow-x: hidden !important;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: wrap;
+}
+.projects .p1{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin-top: 5vh;
+  align-items: center;
+  gap: 2vh;
+  height: max-content;
+  width: 90%;
+  /* background-color: crimson; */
+}
+
+
+.projects .p1 h1{
+  font-size: 3.5vmax;
+  /* border: 2px solid; */
+  margin-top: 0.5vh;
+}
+.projects .p1 .p1-inner{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: max-content;
+  /* background-color: #01579B; */
+  align-items: center;
+
+}
+.projects .p1 .p1-inner iframe{
+  width: 90%;
+  height: 40vh;
+  border-radius: 10%;
+  border: 2px solid;
+  margin-top: 0;
+  margin-bottom: 5vh;
+}
+.projects .p1 .p1-inner .desc{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+  justify-content: center;
+  text-align: justify;
+  gap: 1vh;
+}
+
+.projects .p1 .p1-inner .desc h3{
+  position: relative;
+  border-bottom: 2px solid;
+  font-size: 3.5vmax;
+  /* margin-bottom: 2vh; */
+}
+.projects .p1 .p1-inner .desc h4{
+  font-size: 1rem;
+}
+
+.projects .p2{
+  position: relative;
+  margin-top: 4vh;
+  height: max-content;
+  width: 90%;
+  /* background-color: cornsilk; */
+  display: flex;
+  flex-direction: column;
+}
+
+.projects .p2 h2{
+  font-size: 3.5vmax;
+  /* border-top: 2px solid; */
+}
+.projects .p2 h3{
+  margin-top: 2vh;
+  font-size: 1rem;
+  text-align: justify;
+  /* align-items: right; */
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2vh;
+  /* border-bottom: 2px solid; */
+}
+.projects .p2 .tech{
+  justify-content: center;
+  margin-top: 5vh;
+  /* background-color: cadetblue; */
+  font-size: 3.5vmax;
+}
+.projects .p2 .techstack{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1vmax;
+  width: 100%;
+  height: 50vmax;
+  /* background-color: coral; */
+  flex-wrap: wrap;
+  margin-bottom: 2vh;
+}
+.projects .p2 .techstack .card{
+  width: 15;
+  height: 20vmax;
+}
+
+.projects .p2 .techstack .card .card__content .card__title{
+  font-size: 2vmax;
+}
+.projects .p2 .techstack .card .card__content .card__description{
+  font-size: 1.5vmax;
+}
+.projects .p3{
+  position: relative;
+  height: max-content;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 5vh;
+  /* background-color: cadetblue; */
+}
+.projects .p3 h1{
+  font-size: 3.5vmax;
+}
+.projects .p3 .project-img{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* margin-bottom: 5vmax; */
+  /* background-color: #00acee; */
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.projects .p3 .project-img .projimgcol{
+  display: flex;
+  flex-direction: row;
+  /* background-color: #fff; */
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  gap: 2.5vmax;
+}
+.projects .p3 .project-img .projimgcol img{
+  width: 100%;
+  height: 100%;
+  margin: 5px 5px;
+  border: 2px solid;
+  border-radius: 10%;
+}
+
+
+
 }

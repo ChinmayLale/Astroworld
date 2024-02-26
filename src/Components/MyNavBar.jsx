@@ -89,7 +89,7 @@ function MyNavBar(props) {
         
         
         </span>
-        <div className="mobilemenu" style={{display : showMediaIcons ? 'block' : 'none'}}>
+        <div className="mobilemenu" style={{display : showMediaIcons ? 'block' : 'none' , backdropFilter:'blur(10px)', width:'100vw' , height:'100vh'}}>
             <h4 ><a href="/" style={{'textDecoration':'none','color':props.mode==='light'?'black':'white'}}>Home</a></h4>
             <h4><a href='/about' style={{'textDecoration':'none','color':props.mode==='light'?'black':'white'}}>About</a></h4>
             <h4><a href="/projects" style={{'textDecoration':'none','color':props.mode==='light'?'black':'white'}}>Projects</a></h4>

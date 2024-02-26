@@ -3,6 +3,7 @@ import About from './Components/About';
 import Home from './Components/Home';
 import MyNavBar from './Components/MyNavBar';
 import Projects from './Components/Project';
+import Project2 from './Components/Project_2';
 // import NavBar from './Components/NavBar';
 import { useState } from 'react';
 import { BrowserRouter, Route ,Routes } from "react-router-dom";
@@ -36,6 +37,7 @@ function App() {
         <Route path="/" element={<Home mode={Mode} changeMode={changeMode}/>}/>
         <Route path="/about" element={<About mode={Mode}/>}/>
         <Route path="/projects" element={<Projects mode={Mode}/>}/>
+        <Route path="/projects_2" element={<Project2 mode={Mode}/>}/>
         <Route path="/contactme" element={<h1>Todo</h1>}/>
       </Routes> 
     </BrowserRouter> 
