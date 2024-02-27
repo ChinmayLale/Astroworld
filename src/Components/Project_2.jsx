@@ -1,14 +1,13 @@
 import React from 'react'
-import teampic_1 from './assets/Images/Samana_Pune_1674459217.jpeg';
-import teampic_2 from './assets/Images/Team.jpg';
-import teampic_3 from './assets/Images/vijayBhatkar.jpg';
+import teampic_2 from './assets/Images/reactapp_1.png';
+import teampic_3 from './assets/Images/reactapp_2.png';
 function Project2(props) {
     return (
         <div className="projects">
             <div className="p1">
                 <h1>PortFolio  - Using React JS</h1>
                 <div className="p1-inner">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7YcE06znHCg?si=YrgB_G6jS0YBVMd7" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zf83a3onJ5A?si=UiJrckx7vVSxDRLP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <div className="desc">
                         <h3>Description </h3>
                         <h4>&bull; Made A Portfolio website using react Js , Html , Css
@@ -64,15 +63,11 @@ function Project2(props) {
                 <h1 style={{ textAlign: 'center', borderBottom: '2px solid', width: '100%' }}>Some Project Pics </h1>
                 <div className="project-img">
                     <div className="projimgcol">
-                        <img src={teampic_1} alt="" id='img1p' />
-                        <h2>Proud Movement news was Published In Paper </h2>
-                    </div>
-                    <div className="projimgcol">
-                        <img src={teampic_3} alt="" id='img1p' />
+                        <img src={teampic_3} alt="" id='img1p' style={{ width: '20vw', height: '30vh', backgroundSize: 'contain', padding: '5px 5px' }} />
                         <h2>Proud Movement Demonstrating Project To Honurable <b>Dr. Vijay Bhatkar Sir</b></h2>
                     </div>
                     <div className="projimgcol">
-                        <img src={teampic_2} alt="" id='img1p' />
+                        <img src={teampic_2} alt="" id='img1p' style={{ width: '20vw', height: '30vh', backgroundSize: 'contain', padding: '5px 5px' }} />
                         <h2>Testing Our Project in Real World</h2>
                     </div>
                 </div>

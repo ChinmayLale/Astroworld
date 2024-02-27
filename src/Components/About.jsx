@@ -38,7 +38,6 @@ function About(props) {
   const changeImageplus = () => {
     const imageElement = document.getElementById("certiimg");
     // const imageElement = document.getElementById("certiimg");
-
     currentIndex = (currentIndex + 1);
     if (currentIndex > 10) {
       currentIndex = 0;
@@ -47,6 +46,7 @@ function About(props) {
     imageElement.src = currentImage.src;
     imageElement.alt = currentImage.alt;
   }
+  setInterval(changeImageplus, 3000);
   const changeImageminus = () => {
     const imageElement = document.getElementById("certiimg");
     // const imageElement = document.getElementById("certiimg");
@@ -59,6 +59,7 @@ function About(props) {
     imageElement.src = currentImage.src;
     imageElement.alt = currentImage.alt;
   }
+
 
   return (
     <div className='about'>

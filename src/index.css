@@ -446,9 +446,10 @@ html ,body{
 }
 .about .certi-about img{
   border: 2px solid white;
-  border-radius: 5%;
+  padding: 15px 15px;
+  border-radius: 10%;
   background-size: auto;
-  background-color: blue;
+  /* background-color: blue; */
   width: 50vmax;
   height: 35vmax;
 }
@@ -923,7 +924,7 @@ html ,body{
     border: 2px solid white;
     border-radius: 5%;
     background-size: auto;
-    background-color: blue;
+    /* background-color: blue; */
     width: 80%;
     height: 50%;
   }

@@ -63,7 +63,7 @@ function Project(props) {
 
           <div className="card">
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" style={{ filter: props.mode==='light' ? 'invert(0%)' : 'invert(100%)'}}>
-              <g fill="none" stroke="#000" stroke-width="2">
+              <g fill="none" stroke="#000" strokeWidth="2">
                 <circle cx="24" cy="24" r="20" />
                 <path d="M16 24v-4h4M32 24v-4h-4M12 16l4 4M36 16l-4 4M12 32l4-4M36 32l-4-4" />
                 <path d="M24 8l8 8M24 40l8-8" />
