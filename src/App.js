@@ -6,7 +6,7 @@ import Projects from './Components/Project';
 import Project2 from './Components/Project_2';
 // import NavBar from './Components/NavBar';
 import { useState } from 'react';
-import {HashRouter as BrowserRouter, Route ,Routes } from "react-router-dom";
+import {BrowserRouter, Route ,Routes } from "react-router-dom";
 function App() {
   const [Mode, setMode] = useState('light');
 
@@ -32,9 +32,9 @@ function App() {
     {/* <NavBar mode={Mode} changeMode={changeMode}/> */}
     <MyNavBar mode={Mode} changeMode={changeMode}/>
     
-    <BrowserRouter basename='/Astroworld'>
+    <BrowserRouter >
       <Routes>
-        <Route path="/Astroworld" element={<Home mode={Mode} changeMode={changeMode}/>}/>
+        <Route path="/" element={<Home mode={Mode} changeMode={changeMode}/>}/>
         <Route path="/about" element={<About mode={Mode}/>}/>
         <Route path="/projects" element={<Projects mode={Mode}/>}/>
         <Route path="/projects_2" element={<Project2 mode={Mode}/>}/>
