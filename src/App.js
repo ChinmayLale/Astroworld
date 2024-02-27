@@ -6,7 +6,7 @@ import Projects from './Components/Project';
 import Project2 from './Components/Project_2';
 // import NavBar from './Components/NavBar';
 import { useState } from 'react';
-import { BrowserRouter, Route ,Routes } from "react-router-dom";
+import {HashRouter as BrowserRouter, Route ,Routes } from "react-router-dom";
 function App() {
   const [Mode, setMode] = useState('light');
 
