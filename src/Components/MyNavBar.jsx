@@ -1,19 +1,21 @@
 import React, { useState }  from 'react'
 import rocket from './assets/Images/charm_rocket.svg';
+import {Link} from 'react-router-dom';
 import  './Style/NavChangeMode.css';
 function MyNavBar(props) {
     const logoColor = props.mode === 'light' ? 'black' : 'white';
     const [showMediaIcons, setShowMediaIcons] = useState(false);
+    // const navigate = useNavigate();
   return (
     <nav className='mynav' style={{'color':props.mode==='light'?'black':'white'}}>
         <div className="navlogo">
            <span className='navimg'><img src={rocket} alt="" style={{ filter: props.mode==='light' ? 'invert(100%)' : 'invert(0)' , 'transform':'scale(1em)'}}/></span> <h3>AstroWorld</h3>
         
         <div className="navItems"style={{'textDecoration':'none','color':props.mode==='light'?'black':'white'}}>
-            <h4 ><a href="/Astroworld/" style={{'textDecoration':'none','color':props.mode==='light'?'black':'white'}}>Home</a></h4>
-            <h4><a href='/Astroworld/about' style={{'textDecoration':'none','color':props.mode==='light'?'black':'white'}}>About</a></h4>
-            <h4><a href="/Astroworld/projects" style={{'textDecoration':'none','color':props.mode==='light'?'black':'white'}}>Projects</a></h4>
-            <h4><a href="/Astroworld/contactme" style={{'textDecoration':'none','color':props.mode==='light'?'black':'white'}}>ContactMe</a></h4>
+            <h4 ><Link to="/Astroworld" style={{'textDecoration':'none','color':props.mode==='light'?'black':'white'}}>Home</Link></h4>
+            <h4><Link to='/Astroworld/about' style={{'textDecoration':'none','color':props.mode==='light'?'black':'white'}}>About</Link></h4>
+            <h4><Link  to="/Astroworld/projects" style={{'textDecoration':'none','color':props.mode==='light'?'black':'white'}}>Projects</Link></h4>
+            <h4><Link to="/Astroworld/contactme" style={{'textDecoration':'none','color':props.mode==='light'?'black':'white'}}>ContactMe</Link></h4>
            
         </div>
         </div>
