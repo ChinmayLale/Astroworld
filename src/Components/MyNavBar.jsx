@@ -10,10 +10,10 @@ function MyNavBar(props) {
            <span className='navimg'><img src={rocket} alt="" style={{ filter: props.mode==='light' ? 'invert(100%)' : 'invert(0)' , 'transform':'scale(1em)'}}/></span> <h3>AstroWorld</h3>
         
         <div className="navItems"style={{'textDecoration':'none','color':props.mode==='light'?'black':'white'}}>
-            <h4 ><a href="/" style={{'textDecoration':'none','color':props.mode==='light'?'black':'white'}}>Home</a></h4>
-            <h4><a href='/about' style={{'textDecoration':'none','color':props.mode==='light'?'black':'white'}}>About</a></h4>
-            <h4><a href="/projects" style={{'textDecoration':'none','color':props.mode==='light'?'black':'white'}}>Projects</a></h4>
-            <h4><a href="/contactme" style={{'textDecoration':'none','color':props.mode==='light'?'black':'white'}}>ContactMe</a></h4>
+            <h4 ><a href="/Astroworld" style={{'textDecoration':'none','color':props.mode==='light'?'black':'white'}}>Home</a></h4>
+            <h4><a href='/Astroworld/about' style={{'textDecoration':'none','color':props.mode==='light'?'black':'white'}}>About</a></h4>
+            <h4><a href="/Astroworld/projects" style={{'textDecoration':'none','color':props.mode==='light'?'black':'white'}}>Projects</a></h4>
+            <h4><a href="/Astroworld/contactme" style={{'textDecoration':'none','color':props.mode==='light'?'black':'white'}}>ContactMe</a></h4>
            
         </div>
         </div>

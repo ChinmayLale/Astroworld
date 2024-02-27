@@ -32,7 +32,7 @@ function App() {
     {/* <NavBar mode={Mode} changeMode={changeMode}/> */}
     <MyNavBar mode={Mode} changeMode={changeMode}/>
     
-    <BrowserRouter >
+    <BrowserRouter basename='/Astroworld'>
       <Routes>
         <Route path="/" element={<Home mode={Mode} changeMode={changeMode}/>}/>
         <Route path="/about" element={<About mode={Mode}/>}/>
