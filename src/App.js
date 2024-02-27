@@ -35,10 +35,10 @@ function App() {
     <BrowserRouter basename='/Astroworld'>
       <Routes>
         <Route path="/Astroworld" element={<Home mode={Mode} changeMode={changeMode}/>}/>
-        <Route path="/Astroworld/about" element={<About mode={Mode}/>}/>
-        <Route path="/Astroworld/projects" element={<Projects mode={Mode}/>}/>
-        <Route path="/Astroworld/projects_2" element={<Project2 mode={Mode}/>}/>
-        <Route path="/Astroworld/contactme" element={<h1>Todo</h1>}/>
+        <Route path="/about" element={<About mode={Mode}/>}/>
+        <Route path="/projects" element={<Projects mode={Mode}/>}/>
+        <Route path="/projects_2" element={<Project2 mode={Mode}/>}/>
+        <Route path="/contactme" element={<h1>Todo</h1>}/>
       </Routes> 
     </BrowserRouter> 
     </>
