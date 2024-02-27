@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/Astroworld/static/css/main.8fea017c.css",
+    "main.js": "/Astroworld/static/js/main.ce4c4e4c.js",
+    "static/js/453.7328bac4.chunk.js": "/Astroworld/static/js/453.7328bac4.chunk.js",
+    "static/media/Samana_Pune_1674459217.jpeg": "/Astroworld/static/media/Samana_Pune_1674459217.536602fb09f555748cc9.jpeg",
+    "static/media/Designersvg.png": "/Astroworld/static/media/Designersvg.957fe7792ac33bf233cb.png",
+    "static/media/img3.png": "/Astroworld/static/media/img3.95533900b7f5e1078188.png",
+    "static/media/Team.jpg": "/Astroworld/static/media/Team.670a148086bb050e9a61.jpg",
+    "static/media/vijayBhatkar.jpg": "/Astroworld/static/media/vijayBhatkar.13d7c440d4845cbec175.jpg",
+    "static/media/reactapp_2.png": "/Astroworld/static/media/reactapp_2.f85d879b4bff569f71be.png",
+    "static/media/reactapp_1.png": "/Astroworld/static/media/reactapp_1.f9c820e16bf039541425.png",
+    "static/media/img1.png": "/Astroworld/static/media/img1.8a803f91b1aeb5f04669.png",
+    "static/media/img7.png": "/Astroworld/static/media/img7.d6aaa67e4b7ca373d100.png",
+    "static/media/img8.png": "/Astroworld/static/media/img8.8719f07b58b813c9f4c8.png",
+    "static/media/img6.png": "/Astroworld/static/media/img6.93f9cc00940e402153e8.png",
+    "static/media/mypic_test_2.jpg": "/Astroworld/static/media/mypic_test_2.05580fb1f32c95fec9f5.jpg",
+    "static/media/Chinmay_Lale_CV.pdf": "/Astroworld/static/media/Chinmay_Lale_CV.45927851852c7bcb5dd4.pdf",
+    "static/media/img11.png": "/Astroworld/static/media/img11.643328900ba37954e432.png",
+    "static/media/img10.png": "/Astroworld/static/media/img10.644ea03a80a1dfdcad66.png",
+    "static/media/img4.png": "/Astroworld/static/media/img4.8832dd75dd07b73fb4a5.png",
+    "static/media/img5.png": "/Astroworld/static/media/img5.e75dfad9e0e0b121b6e3.png",
+    "static/media/img2.png": "/Astroworld/static/media/img2.247554b5cd05d9514b7f.png",
+    "static/media/img9.png": "/Astroworld/static/media/img9.cd1f7dea6f72848e82f6.png",
+    "index.html": "/Astroworld/index.html",
+    "static/media/charm_rocket.svg": "/Astroworld/static/media/charm_rocket.aec318fcbe85bf28fd4a8fee1a6d774b.svg",
+    "main.8fea017c.css.map": "/Astroworld/static/css/main.8fea017c.css.map",
+    "main.ce4c4e4c.js.map": "/Astroworld/static/js/main.ce4c4e4c.js.map",
+    "453.7328bac4.chunk.js.map": "/Astroworld/static/js/453.7328bac4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8fea017c.css",
+    "static/js/main.ce4c4e4c.js"
+  ]
+}
