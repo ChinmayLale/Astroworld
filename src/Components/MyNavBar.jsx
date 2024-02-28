@@ -21,7 +21,6 @@ function MyNavBar(props) {
           <h4><Link to='/about' style={{ 'textDecoration': 'none', 'color': props.mode === 'light' ? 'black' : 'white' }}>About</Link></h4>
           <h4><Link to="/projects" style={{ 'textDecoration': 'none', 'color': props.mode === 'light' ? 'black' : 'white' }}>Projects</Link></h4>
           <h4><Link to="/contactme" style={{ 'textDecoration': 'none', 'color': props.mode === 'light' ? 'black' : 'white' }}>ContactMe</Link></h4>
-
         </div>
       </div>
       <div className="socialIcons">
