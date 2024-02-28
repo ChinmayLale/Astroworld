@@ -26,7 +26,7 @@ function App() {
 
 
 
-
+//  "homepage": "https://ChinmayLale.github.io/Astroworld",
   return (
     <>
     {/* <NavBar mode={Mode} changeMode={changeMode}/> */}
@@ -36,9 +36,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home mode={Mode} changeMode={changeMode}/>}/>
         <Route path="/about" element={<About mode={Mode}/>}/>
-        <Route path="/projects/" element={<Projects mode={Mode}/>}/>
-        <Route path="/projects_2/" element={<Project2 mode={Mode}/>}/>
-        <Route path="/contactme/" element={<h1>Todo</h1>}/>
+        <Route path="/projects" element={<Projects mode={Mode}/>}/>
+        <Route path="/projects_2" element={<Project2 mode={Mode}/>}/>
+        <Route path="/contactme" element={<h1>Todo</h1>}/>
       </Routes> 
     {/* </BrowserRouter>  */}
     {/* <Link to={<About mode={Mode}/>}/> */}

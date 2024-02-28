@@ -6,10 +6,18 @@ import teampic_3 from './assets/Images/vijayBhatkar.jpg';
 function Project(props) {
   const navigate = useNavigate();
 
+  const checkimg = async() =>{
+    if(teampic_1 && teampic_2 && teampic_3){
+      console.log("Images Loaded ")
+    }
+    else{
+      checkimg();
+    }
+  }
 
   return (
     <div className="projects">
-      <div className="p1">
+      <div className="p1" onLoad={checkimg}>
         <h1>Trata - Ai Based Crop Monitoring & Predication System</h1>
         <div className="p1-inner">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/7YcE06znHCg?si=YrgB_G6jS0YBVMd7" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
