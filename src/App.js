@@ -1,9 +1,11 @@
 import './App.css';
 import About from './Components/About';
+import ContactMe from './Components/ContactMe';
 import Home from './Components/Home';
 import MyNavBar from './Components/MyNavBar';
 import Projects from './Components/Project';
 import Project2 from './Components/Project_2';
+
 // import NavBar from './Components/NavBar';
 import { useState } from 'react';
 import {BrowserRouter,  Route ,Routes } from "react-router-dom";
@@ -38,7 +40,7 @@ function App() {
         <Route path="/about" element={<About mode={Mode}/>}/>
         <Route path="/projects" element={<Projects mode={Mode}/>}/>
         <Route path="/projects_2" element={<Project2 mode={Mode}/>}/>
-        <Route path="/contactme" element={<h1>Todo</h1>}/>
+        <Route path="/contactme" element={<ContactMe mode={Mode}/>}/>
       </Routes> 
     {/* </BrowserRouter>  */}
     {/* <Link to={<About mode={Mode}/>}/> */}
