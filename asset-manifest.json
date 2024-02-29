@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Astroworld/static/css/main.8fea017c.css",
-    "main.js": "/Astroworld/static/js/main.ee0d8370.js",
+    "main.css": "/Astroworld/static/css/main.a5fddf10.css",
+    "main.js": "/Astroworld/static/js/main.a564d449.js",
     "static/js/453.7328bac4.chunk.js": "/Astroworld/static/js/453.7328bac4.chunk.js",
     "static/media/Samana_Pune_1674459217.jpeg": "/Astroworld/static/media/Samana_Pune_1674459217.536602fb09f555748cc9.jpeg",
     "static/media/Designersvg.png": "/Astroworld/static/media/Designersvg.957fe7792ac33bf233cb.png",
@@ -24,12 +24,12 @@
     "static/media/img9.png": "/Astroworld/static/media/img9.cd1f7dea6f72848e82f6.png",
     "index.html": "/Astroworld/index.html",
     "static/media/charm_rocket.svg": "/Astroworld/static/media/charm_rocket.aec318fcbe85bf28fd4a8fee1a6d774b.svg",
-    "main.8fea017c.css.map": "/Astroworld/static/css/main.8fea017c.css.map",
-    "main.ee0d8370.js.map": "/Astroworld/static/js/main.ee0d8370.js.map",
+    "main.a5fddf10.css.map": "/Astroworld/static/css/main.a5fddf10.css.map",
+    "main.a564d449.js.map": "/Astroworld/static/js/main.a564d449.js.map",
     "453.7328bac4.chunk.js.map": "/Astroworld/static/js/453.7328bac4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8fea017c.css",
-    "static/js/main.ee0d8370.js"
+    "static/css/main.a5fddf10.css",
+    "static/js/main.a564d449.js"
   ]
 }
