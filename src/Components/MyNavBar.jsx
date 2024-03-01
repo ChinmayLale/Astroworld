@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import rocket from './assets/Images/charm_rocket.svg';
-import { a, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Style/NavChangeMode.css';
 function MyNavBar(props) {
   const logoColor = props.mode === 'light' ? 'black' : 'white';
   const [showMediaIcons, setShowMediaIcons] = useState(false);
+
+
   // const navigate = useNavigate();
   return (
     <nav className='mynav' style={{ 'color': props.mode === 'light' ? 'black' : 'white' }}>
@@ -95,8 +97,8 @@ function MyNavBar(props) {
 
 
       </span>
-      <div className="mobilemenu" style={{ display: showMediaIcons ? 'block' : 'none', backdropFilter: 'blur(10px)', width: '100vw', height: '100vh' }}>
-        <h4 ><Link to="/" style={{ 'textDecoration': 'none', 'color': props.mode === 'light' ? 'black' : 'white' }}>Home</Link></h4>
+      <div className="mobilemenu" id='mm' style={{ display: showMediaIcons ? 'block' : 'none', backdropFilter: 'blur(10px)', width: '100vw', height: '100vh' }}>
+        <h4><Link to="/" style={{ 'textDecoration': 'none', 'color': props.mode === 'light' ? 'black' : 'white' }}>Home</Link></h4>
         <h4><Link to='/about' style={{ 'textDecoration': 'none', 'color': props.mode === 'light' ? 'black' : 'white' }}>About</Link></h4>
         <h4><Link to="/projects" style={{ 'textDecoration': 'none', 'color': props.mode === 'light' ? 'black' : 'white' }}>Projects</Link></h4>
         <h4><Link to="/contactme" style={{ 'textDecoration': 'none', 'color': props.mode === 'light' ? 'black' : 'white' }}>ContactMe</Link></h4>
