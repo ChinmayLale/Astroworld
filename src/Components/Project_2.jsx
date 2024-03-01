@@ -63,12 +63,12 @@ function Project2(props) {
                 <h1 style={{ textAlign: 'center', borderBottom: '2px solid', width: '100%' }}>Some Project Pics </h1>
                 <div className="project-img">
                     <div className="projimgcol">
-                        <img src={teampic_3} alt="" id='img1p' style={{ width: '20vw', height: '30vh', backgroundSize: 'contain', padding: '5px 5px' }} />
-                        <h2>Proud Movement Demonstrating Project To Honurable <b>Dr. Vijay Bhatkar Sir</b></h2>
+                        <img src={teampic_3} alt="" id='img1p' style={{ width: '20vmax', height: '30vh', backgroundSize: 'contain', padding: '5px 5px' }} />
+                    
                     </div>
                     <div className="projimgcol">
                         <img src={teampic_2} alt="" id='img1p' style={{ width: '20vw', height: '30vh', backgroundSize: 'contain', padding: '5px 5px' }} />
-                        <h2>Testing Our Project in Real World</h2>
+                    
                     </div>
                 </div>
             </div>
