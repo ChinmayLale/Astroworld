@@ -12,6 +12,8 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
+
+// Firebase Done
 const app = initializeApp(firebaseConfig);
 function ContactMe(props) {
   const db = getFirestore(app);
